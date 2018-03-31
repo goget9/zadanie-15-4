@@ -4,7 +4,9 @@ function multiply() {
 
 	const c = calc(value1, value2);
 
+	console.log(`Zadanie 2`);
 	console.log(c);
+	console.log(``);
 
 	document.getElementById('resault').innerText = `
 		Equasion: a * b = c
@@ -15,16 +17,9 @@ function multiply() {
 }
 
 var calc = (a, b) => {
-	console.log(`before`)
-	console.log(a)
-	console.log(b)
 
 	a = (a == 0 ? 1 : a);
 	b = (b == 0 ? 1 : b);
 
-	console.log(`after`)
-	console.log(a)
-	console.log(b)
-
-	return a * b
+	return a * b;
 };
